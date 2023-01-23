@@ -3,9 +3,9 @@ import { Page, Attribute, AttributeType, Config, Trigger } from './utils/config'
 // Change this to build your own dashboard - see `utils/config.ts` for documentation
 
 const DASHIBASE_CONFIG:Config = {
-  name: "My Dashboard",
-  supabase_url: "https://YOUR_SUPABASE_URL.supabase.co",
-  supabase_anon_key: "YOUR_SUPABASE_ANON_KEY",
+  name: "Manipal OSF Dashboard",
+  supabase_url: import.meta.env.VITE_SUPABASE_URL!,
+  supabase_anon_key: import.meta.env.VITE_SUPABASE_KEY!,
   pages: [
     {
       name: "My Page",
